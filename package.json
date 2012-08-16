@@ -1,0 +1,17 @@
+{
+    "author": "Rod Vagg @rvagg <rod@vagg.org>"
+  , "name": "readfiletree"
+  , "description": "Serialize a tree of files and directories into object form"
+  , "keywords": [ "temp", "tree", "test", "serialize", "deserialize" ]
+  , "version": "0.0.0"
+  , "main": "readfiletree.js"
+  , "scripts": {
+        "test": "node tests.js"
+    }
+  , "dependencies": {
+        "async": "~0.1.18"
+    }
+  , "devDependencies": {
+        "mkfiletree": "*"
+    }
+}
