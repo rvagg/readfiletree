@@ -2,6 +2,8 @@
 
 Deserialize an file/directory tree into an object. Available in npm as *readfiletree*
 
+[![NPM](https://nodei.co/npm/readfiletree.png?stars&downloads)](https://nodei.co/npm/readfiletree/)
+
 Particularly useful for testing where you need to do a `deepEqual()` on a simple tree of files. **See [node-mkfiletree](https://github.com/rvagg/node-mkfiletree) for file tree serialization.**
 
 ### require('readfiletree')(directory, callback)
