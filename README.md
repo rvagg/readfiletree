@@ -1,20 +1,22 @@
-# node-readfiletree
+# readfiletree
 
-Deserialize an file/directory tree into an object. Available in npm as *readfiletree*
+Deserialise an file/directory tree into an object. Available in npm as *readfiletree*
 
-[![NPM](https://nodei.co/npm/readfiletree.png?stars&downloads)](https://nodei.co/npm/readfiletree/)
+[![NPM](https://nodei.co/npm/readfiletree.svg)](https://nodei.co/npm/readfiletree/)
 
-Particularly useful for testing where you need to do a `deepEqual()` on a simple tree of files. **See [node-mkfiletree](https://github.com/rvagg/node-mkfiletree) for file tree serialization.**
+Particularly useful for testing where you need to do a `deepStrictEqual()` on a simple tree of files. **See [mkfiletree](https://github.com/rvagg/mkfiletree) for file tree serialisation.**
 
-### require('readfiletree')(directory, callback)
+### require('readfiletree')(directory[, callback])
 
-Read the directory and the files it contains, recursively, and return an object representing the directory structure with nodes containing the utf8 string contents of each file. The arguments of the callback are: `(err, object)`.
+Read the directory and the files it contains, recursively, and return an object representing the directory structure with nodes containing the utf8 string contents of each file. The arguments of the optional callback are: `(err, object)`. If no callback is supplied, a `Promise` is returned which can be used to `await` the serialised `object`.
 
 Using both *mkfiletree* and *readfiletree* we can do the following:
 
 ```js
-require('mkfiletree').makeTemp(
-  'testfiles',
+const mkfiletree = require('mkfiletree')
+const readfiletree = require('readfiletree')
+
+let dir = await mkfiletree.makeTemp('testfiles',
   {
     'adir': {
       'one.txt': '1\n2\n3\n',
@@ -24,16 +26,13 @@ require('mkfiletree').makeTemp(
       }
     },
     'afile.txt': 'file contents'
-  },
-  function (err, dir) {
-    require('readfiletree')(dir, function (err, obj) {
-      console.log(obj)
-    })
-  }
-)
+  })
+
+let obj = await readfiletree(dir)
+console.log(obj)
 ```
 
-The directory structre created above looks like the following:
+The directory structure created above looks like the following:
 
 ```
 $ find /tmp/testfiles11240-23530-r7rs3 -type f -exec sh -c "echo '\n{}: ' && cat '{}'" \;
@@ -76,8 +75,7 @@ Tests can be run with `npm test`. I'm more than happy to receive contributions s
 
 No, there is no sync version, do it async, it's good for your health and contains additional vitamin C, B1, B2 and folate.
 
-
-*Copyright (c) 2012 [Rod Vagg](https://github.com/rvagg) ([@rvagg](https://twitter.com/rvagg))*
+*Copyright (c) 2012 [Rod Vagg](https://github.com/rvagg)
 
 Made available under the MIT licence:
 

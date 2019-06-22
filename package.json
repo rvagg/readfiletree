@@ -15,10 +15,10 @@
         "test": "node tests.js"
     },
     "dependencies": {
-        "async": "~0.1.18"
+        "after": "~0.8.2"
     },
     "devDependencies": {
-        "mkfiletree": "*"
+        "mkfiletree": "~2.0.0"
     },
     "repository": {
         "type": "git",
