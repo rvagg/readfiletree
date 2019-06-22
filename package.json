@@ -9,7 +9,7 @@
         "serialize",
         "deserialize"
     ],
-    "version": "0.0.2",
+    "version": "1.0.0",
     "main": "readfiletree.js",
     "scripts": {
         "test": "node tests.js"
