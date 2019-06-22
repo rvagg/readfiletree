@@ -1,21 +1,27 @@
 {
-    "author": "Rod Vagg @rvagg <rod@vagg.org>"
-  , "name": "readfiletree"
-  , "description": "Serialize a tree of files and directories into object form"
-  , "keywords": [ "temp", "tree", "test", "serialize", "deserialize" ]
-  , "version": "0.0.1"
-  , "main": "readfiletree.js"
-  , "scripts": {
+    "author": "Rod Vagg @rvagg <rod@vagg.org>",
+    "name": "readfiletree",
+    "description": "Serialize a tree of files and directories into object form",
+    "keywords": [
+        "temp",
+        "tree",
+        "test",
+        "serialize",
+        "deserialize"
+    ],
+    "version": "0.0.2",
+    "main": "readfiletree.js",
+    "scripts": {
         "test": "node tests.js"
-    }
-  , "dependencies": {
+    },
+    "dependencies": {
         "async": "~0.1.18"
-    }
-  , "devDependencies": {
+    },
+    "devDependencies": {
         "mkfiletree": "*"
-    }
-  , "repository"      : {
-        "type": "git"
-      , "url": "https://github.com/rvagg/node-readfiletree.git"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rvagg/node-readfiletree.git"
     }
 }
