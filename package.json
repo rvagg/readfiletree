@@ -1,27 +1,30 @@
 {
-    "author": "Rod Vagg @rvagg <rod@vagg.org>",
-    "name": "readfiletree",
-    "description": "Serialize a tree of files and directories into object form",
-    "keywords": [
-        "temp",
-        "tree",
-        "test",
-        "serialize",
-        "deserialize"
-    ],
-    "version": "1.0.0",
-    "main": "readfiletree.js",
-    "scripts": {
-        "test": "node tests.js"
-    },
-    "dependencies": {
-        "after": "~0.8.2"
-    },
-    "devDependencies": {
-        "mkfiletree": "~2.0.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/rvagg/node-readfiletree.git"
-    }
+  "author": "Rod Vagg @rvagg <rod@vagg.org>",
+  "name": "readfiletree",
+  "description": "Serialize a tree of files and directories into object form",
+  "keywords": [
+    "temp",
+    "tree",
+    "test",
+    "serialize",
+    "deserialize"
+  ],
+  "version": "1.0.0",
+  "main": "readfiletree.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint && node tests.js",
+    "test:ci": "npm run lint && node tests.js",
+    "build": "true"
+  },
+  "devDependencies": {
+    "mkfiletree": "^3.0.0",
+    "standard": "^17.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rvagg/node-readfiletree.git"
+  }
 }
