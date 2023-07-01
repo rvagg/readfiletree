@@ -6,17 +6,17 @@ Deserialise an file/directory tree into an object. Available in npm as *readfile
 
 Particularly useful for testing where you need to do a `deepStrictEqual()` on a simple tree of files. **See [mkfiletree](https://github.com/rvagg/mkfiletree) for file tree serialisation.**
 
-### require('readfiletree')(directory[, callback])
+### async readfiletree(directory)
 
-Read the directory and the files it contains, recursively, and return an object representing the directory structure with nodes containing the utf8 string contents of each file. The arguments of the optional callback are: `(err, object)`. If no callback is supplied, a `Promise` is returned which can be used to `await` the serialised `object`.
+Read the directory and the files it contains, recursively, and return an object representing the directory structure with nodes containing the utf8 string contents of each file.
 
 Using both *mkfiletree* and *readfiletree* we can do the following:
 
 ```js
-const mkfiletree = require('mkfiletree')
-const readfiletree = require('readfiletree')
+import * as mkfiletree from 'mkfiletree'
+import { readfiletree } from 'readfiletree'
 
-let dir = await mkfiletree.makeTemp('testfiles',
+const dir = await mkfiletree.makeTemp('testfiles',
   {
     'adir': {
       'one.txt': '1\n2\n3\n',
@@ -28,7 +28,7 @@ let dir = await mkfiletree.makeTemp('testfiles',
     'afile.txt': 'file contents'
   })
 
-let obj = await readfiletree(dir)
+const obj = await readfiletree(dir)
 console.log(obj)
 ```
 
@@ -66,14 +66,6 @@ And the output of the program should be the same as the input to *mkfiletree*:
   'afile.txt': 'file contents'
 }
 ```
-
-## Contributing
-
-Tests can be run with `npm test`. I'm more than happy to receive contributions so fork away!
-
-## Synchronous version
-
-No, there is no sync version, do it async, it's good for your health and contains additional vitamin C, B1, B2 and folate.
 
 *Copyright (c) 2012 [Rod Vagg](https://github.com/rvagg)
 
