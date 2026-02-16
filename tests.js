@@ -1,8 +1,9 @@
-import assert from 'assert'
+import { test } from 'node:test'
+import assert from 'node:assert'
 import * as mkfiletree from 'mkfiletree'
 import { readfiletree } from './readfiletree.js'
 
-function mkfixture () { // make a new copy each time, ensure no edits at any depth
+function mkfixture () {
   return {
     'foo.txt': 'FOO!',
     bar: {
@@ -16,14 +17,10 @@ function mkfixture () { // make a new copy each time, ensure no edits at any dep
   }
 }
 
-async function test () {
+test('readfiletree reads a file tree into an object', async () => {
   const dir = await mkfiletree.makeTemp('readfiletree_test', mkfixture())
   assert(dir)
   const obj = await readfiletree(dir)
   assert.deepStrictEqual(obj, mkfixture())
-}
-
-test().catch((err) => {
-  console.error(err)
-  process.exit(1)
+  await mkfiletree.cleanUp()
 })

@@ -1,6 +1,6 @@
 /* Copyright (c) 2012 Rod Vagg <@rvagg> */
-import fs from 'fs/promises'
-import path from 'path'
+import fs from 'node:fs/promises'
+import path from 'node:path'
 
 export async function readfiletree (dir, obj) {
   if (obj == null) {

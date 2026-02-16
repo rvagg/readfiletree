@@ -1,12 +1,16 @@
 # readfiletree
 
-Deserialise an file/directory tree into an object. Available in npm as *readfiletree*
+[![NPM](https://nodei.co/npm/readfiletree.svg?style=flat&data=n,v&color=blue)](https://nodei.co/npm/readfiletree/)
 
-[![NPM](https://nodei.co/npm/readfiletree.svg)](https://nodei.co/npm/readfiletree/)
+Deserialize a file/directory tree into an object. Particularly useful for testing where you need to do a `deepStrictEqual()` on a simple tree of files. **See [mkfiletree](https://github.com/rvagg/node-mkfiletree) for file tree serialization.**
 
-Particularly useful for testing where you need to do a `deepStrictEqual()` on a simple tree of files. **See [mkfiletree](https://github.com/rvagg/mkfiletree) for file tree serialisation.**
+## Requirements
 
-### async readfiletree(directory)
+Node.js >= 20
+
+## API
+
+### await readfiletree(directory)
 
 Read the directory and the files it contains, recursively, and return an object representing the directory structure with nodes containing the utf8 string contents of each file.
 
@@ -36,19 +40,19 @@ The directory structure created above looks like the following:
 
 ```
 $ find /tmp/testfiles11240-23530-r7rs3 -type f -exec sh -c "echo '\n{}: ' && cat '{}'" \;
-  →  /tmp/testfiles11240-23530-r7rs3/afile.txt: 
-      file contents
-      /tmp/testfiles11240-23530-r7rs3/adir/deeper/depths.txt: 
-      whoa...
-      /tmp/testfiles11240-23530-r7rs3/adir/two.txt: 
-      a
-      b
-      c
+  /tmp/testfiles11240-23530-r7rs3/afile.txt:
+    file contents
+    /tmp/testfiles11240-23530-r7rs3/adir/deeper/depths.txt:
+    whoa...
+    /tmp/testfiles11240-23530-r7rs3/adir/two.txt:
+    a
+    b
+    c
 
-      /tmp/testfiles11240-23530-r7rs3/adir/one.txt: 
-      1
-      2
-      3
+    /tmp/testfiles11240-23530-r7rs3/adir/one.txt:
+    1
+    2
+    3
 
 ```
 
@@ -67,24 +71,6 @@ And the output of the program should be the same as the input to *mkfiletree*:
 }
 ```
 
-*Copyright (c) 2012 [Rod Vagg](https://github.com/rvagg)
+## License
 
-Made available under the MIT licence:
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is furnished
-to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+**readfiletree** is Copyright (c) 2012 Rod Vagg [@rvagg](https://github.com/rvagg) and licenced under the MIT licence. All rights not explicitly granted in the MIT license are reserved. See the included LICENSE.md file for more details.
