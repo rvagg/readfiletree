@@ -1,3 +1,9 @@
+## [2.1.5](https://github.com/rvagg/readfiletree/compare/v2.1.4...v2.1.5) (2026-06-23)
+
+### Trivial Changes
+
+* **deps:** bump actions/checkout from 6.0.3 to 7.0.0 ([#10](https://github.com/rvagg/readfiletree/issues/10)) ([8c635f8](https://github.com/rvagg/readfiletree/commit/8c635f83b23601451ce317b26ba803b49383d916))
+
 ## [2.1.4](https://github.com/rvagg/readfiletree/compare/v2.1.3...v2.1.4) (2026-06-22)
 
 ### Trivial Changes
