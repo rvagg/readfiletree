@@ -9,7 +9,7 @@
     "serialize",
     "deserialize"
   ],
-  "version": "2.1.6",
+  "version": "2.1.7",
   "main": "readfiletree.js",
   "type": "module",
   "exports": "./readfiletree.js",
