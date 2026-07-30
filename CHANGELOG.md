@@ -1,3 +1,9 @@
+## [2.1.9](https://github.com/rvagg/readfiletree/compare/v2.1.8...v2.1.9) (2026-07-30)
+
+### Trivial Changes
+
+* downgrade broken changelog maker, backfill entries ([#15](https://github.com/rvagg/readfiletree/issues/15)) ([c42084e](https://github.com/rvagg/readfiletree/commit/c42084e92b4898e6b5fc25bb37729fe55e368550))
+
 ## [2.1.8](https://github.com/rvagg/readfiletree/compare/v2.1.7...v2.1.8) (2026-07-27)
 
 ### Trivial Changes
