@@ -1,8 +1,20 @@
 ## [2.1.8](https://github.com/rvagg/readfiletree/compare/v2.1.7...v2.1.8) (2026-07-27)
 
+### Trivial Changes
+
+* **deps:** bump the github-actions-minor-patch group with 2 updates ([#14](https://github.com/rvagg/readfiletree/issues/14)) ([8402fcf](https://github.com/rvagg/readfiletree/commit/8402fcf7d5359c72dc6e75b83ee918be1b77b6bd))
+
 ## [2.1.7](https://github.com/rvagg/readfiletree/compare/v2.1.6...v2.1.7) (2026-07-21)
 
+### Trivial Changes
+
+* **ci:** slow down dependabot, add depsound, pin actions by hash ([#13](https://github.com/rvagg/readfiletree/issues/13)) ([c1b3ce3](https://github.com/rvagg/readfiletree/commit/c1b3ce39cc1ee0c138b82e92c2cdd815786cebd6))
+
 ## [2.1.6](https://github.com/rvagg/readfiletree/compare/v2.1.5...v2.1.6) (2026-07-02)
+
+### Trivial Changes
+
+* **deps-dev:** bump conventional-changelog-conventionalcommits ([#11](https://github.com/rvagg/readfiletree/issues/11)) ([1b09d6d](https://github.com/rvagg/readfiletree/commit/1b09d6da2584b7d20c1d2fd1cc535a2f0c02cf69))
 
 ## [2.1.5](https://github.com/rvagg/readfiletree/compare/v2.1.4...v2.1.5) (2026-06-23)
 
