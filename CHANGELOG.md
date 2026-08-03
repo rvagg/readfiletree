@@ -1,3 +1,9 @@
+## [2.1.12](https://github.com/rvagg/readfiletree/compare/v2.1.11...v2.1.12) (2026-08-03)
+
+### Trivial Changes
+
+* **deps-dev:** bump @semantic-release/git from 10.0.1 to 11.0.1 ([#17](https://github.com/rvagg/readfiletree/issues/17)) ([d637d23](https://github.com/rvagg/readfiletree/commit/d637d23c113fdb630d418bf4e803c8ffd6d516e8))
+
 ## [2.1.11](https://github.com/rvagg/readfiletree/compare/v2.1.10...v2.1.11) (2026-08-03)
 
 ### Trivial Changes
