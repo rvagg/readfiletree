@@ -1,3 +1,9 @@
+## [2.1.10](https://github.com/rvagg/readfiletree/compare/v2.1.9...v2.1.10) (2026-08-03)
+
+### Trivial Changes
+
+* **deps:** bump the github-actions-minor-patch group with 2 updates ([#16](https://github.com/rvagg/readfiletree/issues/16)) ([f054869](https://github.com/rvagg/readfiletree/commit/f0548697347a501e84061b70964d0be81853832f))
+
 ## [2.1.9](https://github.com/rvagg/readfiletree/compare/v2.1.8...v2.1.9) (2026-07-30)
 
 ### Trivial Changes
