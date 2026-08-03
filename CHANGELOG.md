@@ -1,3 +1,9 @@
+## [2.1.11](https://github.com/rvagg/readfiletree/compare/v2.1.10...v2.1.11) (2026-08-03)
+
+### Trivial Changes
+
+* **deps-dev:** bump @semantic-release/changelog from 6.0.3 to 7.0.0 ([#18](https://github.com/rvagg/readfiletree/issues/18)) ([c510dd6](https://github.com/rvagg/readfiletree/commit/c510dd6c2b15af94bed0b03414dcd1934020acd1))
+
 ## [2.1.10](https://github.com/rvagg/readfiletree/compare/v2.1.9...v2.1.10) (2026-08-03)
 
 ### Trivial Changes
