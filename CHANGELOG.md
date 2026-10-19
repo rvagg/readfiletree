@@ -1,3 +1,9 @@
+## [2.1.13](https://github.com/rvagg/readfiletree/compare/v2.1.12...v2.1.13) (2026-10-19)
+
+### Trivial Changes
+
+* **deps:** bump actions/setup-node ([#22](https://github.com/rvagg/readfiletree/issues/22)) ([16a092f](https://github.com/rvagg/readfiletree/commit/16a092f0ebf1446465e3e417964a8e9ceed43c6f))
+
 ## [2.1.12](https://github.com/rvagg/readfiletree/compare/v2.1.11...v2.1.12) (2026-08-03)
 
 ### Trivial Changes
